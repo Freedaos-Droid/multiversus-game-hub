@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +52,14 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				gaming: {
+					success: 'hsl(var(--gaming-success))',
+					warning: 'hsl(var(--gaming-warning))',
+					xbox: 'hsl(var(--gaming-xbox))',
+					playstation: 'hsl(var(--gaming-playstation))',
+					nintendo: 'hsl(var(--gaming-nintendo))',
+					pc: 'hsl(var(--gaming-pc))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
