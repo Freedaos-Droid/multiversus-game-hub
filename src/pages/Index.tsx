@@ -6,7 +6,7 @@ import { GameFilter, FilterOptions } from '@/components/GameFilter';
 import { Cart } from '@/components/Cart';
 import { ShoppingCart, Star, Users, Download } from 'lucide-react';
 
-// Import game images
+// Import all unique game images
 import heroImage from '@/assets/hero-gaming.jpg';
 import game1 from '@/assets/game-1.jpg';
 import game2 from '@/assets/game-2.jpg';
@@ -14,8 +14,27 @@ import game3 from '@/assets/game-3.jpg';
 import game4 from '@/assets/game-4.jpg';
 import game5 from '@/assets/game-5.jpg';
 import game6 from '@/assets/game-6.jpg';
+import game7 from '@/assets/game-7.jpg';
+import game8 from '@/assets/game-8.jpg';
+import game9 from '@/assets/game-9.jpg';
+import game10 from '@/assets/game-10.jpg';
+import game11 from '@/assets/game-11.jpg';
+import game12 from '@/assets/game-12.jpg';
+import game13 from '@/assets/game-13.jpg';
+import game14 from '@/assets/game-14.jpg';
+import game15 from '@/assets/game-15.jpg';
+import game16 from '@/assets/game-16.jpg';
+import game17 from '@/assets/game-17.jpg';
+import game18 from '@/assets/game-18.jpg';
+import game19 from '@/assets/game-19.jpg';
+import game20 from '@/assets/game-20.jpg';
+import game21 from '@/assets/game-21.jpg';
+import game22 from '@/assets/game-22.jpg';
+import game23 from '@/assets/game-23.jpg';
+import game24 from '@/assets/game-24.jpg';
+import game25 from '@/assets/game-25.jpg';
 
-// Game database
+// Game database with unique images for each game
 const GAMES: Game[] = [
   { id: '1', title: 'Cyber Nexus', platform: 'PS5', type: 'Physical', price: 59.99, image: game1, genre: 'Action' },
   { id: '2', title: 'Mystic Realms', platform: 'Xbox', type: 'Digital', price: 49.99, image: game2, genre: 'RPG' },
@@ -23,25 +42,25 @@ const GAMES: Game[] = [
   { id: '4', title: 'Dead Zone', platform: 'PS5', type: 'Physical', price: 54.99, image: game4, genre: 'Horror' },
   { id: '5', title: 'Cosmic Explorer', platform: 'PC', type: 'Digital', price: 44.99, image: game5, genre: 'Space' },
   { id: '6', title: 'Stadium Champions', platform: 'Nintendo Switch', type: 'Physical', price: 49.99, image: game6, genre: 'Sports' },
-  { id: '7', title: 'Shadow Wars', platform: 'Xbox', type: 'Digital', price: 59.99, image: game1, genre: 'Action' },
-  { id: '8', title: 'Magic Kingdom', platform: 'Nintendo Switch', type: 'Physical', price: 39.99, image: game2, genre: 'Adventure' },
-  { id: '9', title: 'Speed Demons', platform: 'PS5', type: 'Digital', price: 34.99, image: game3, genre: 'Racing' },
-  { id: '10', title: 'Nightmare Manor', platform: 'PC', type: 'Digital', price: 29.99, image: game4, genre: 'Horror' },
-  { id: '11', title: 'Galaxy Quest', platform: 'Xbox', type: 'Physical', price: 64.99, image: game5, genre: 'Space' },
-  { id: '12', title: 'World Cup 2024', platform: 'PS5', type: 'Physical', price: 59.99, image: game6, genre: 'Sports' },
-  { id: '13', title: 'Urban Combat', platform: 'PC', type: 'Digital', price: 45.99, image: game1, genre: 'Action' },
-  { id: '14', title: 'Fantasy Legends', platform: 'Nintendo Switch', type: 'Digital', price: 42.99, image: game2, genre: 'RPG' },
-  { id: '15', title: 'Turbo Highway', platform: 'Xbox', type: 'Physical', price: 37.99, image: game3, genre: 'Racing' },
-  { id: '16', title: 'Terror House', platform: 'PS5', type: 'Digital', price: 32.99, image: game4, genre: 'Horror' },
-  { id: '17', title: 'Star Voyager', platform: 'PC', type: 'Physical', price: 67.99, image: game5, genre: 'Space' },
-  { id: '18', title: 'Tennis Masters', platform: 'Nintendo Switch', type: 'Digital', price: 24.99, image: game6, genre: 'Sports' },
-  { id: '19', title: 'Battle Royale X', platform: 'Xbox', type: 'Digital', price: 19.99, image: game1, genre: 'Action' },
-  { id: '20', title: 'Dragon Quest', platform: 'PS5', type: 'Physical', price: 69.99, image: game2, genre: 'RPG' },
-  { id: '21', title: 'Drift Masters', platform: 'PC', type: 'Digital', price: 41.99, image: game3, genre: 'Racing' },
-  { id: '22', title: 'Haunted Woods', platform: 'Nintendo Switch', type: 'Physical', price: 36.99, image: game4, genre: 'Horror' },
-  { id: '23', title: 'Alien Worlds', platform: 'Xbox', type: 'Digital', price: 52.99, image: game5, genre: 'Space' },
-  { id: '24', title: 'Basketball Pro', platform: 'PS5', type: 'Physical', price: 55.99, image: game6, genre: 'Sports' },
-  { id: '25', title: 'Elite Forces', platform: 'PC', type: 'Digital', price: 48.99, image: game1, genre: 'Action' },
+  { id: '7', title: 'Shadow Wars', platform: 'Xbox', type: 'Digital', price: 59.99, image: game7, genre: 'Action' },
+  { id: '8', title: 'Magic Kingdom', platform: 'Nintendo Switch', type: 'Physical', price: 39.99, image: game8, genre: 'Adventure' },
+  { id: '9', title: 'Speed Demons', platform: 'PS5', type: 'Digital', price: 34.99, image: game9, genre: 'Racing' },
+  { id: '10', title: 'Nightmare Manor', platform: 'PC', type: 'Digital', price: 29.99, image: game10, genre: 'Horror' },
+  { id: '11', title: 'Galaxy Quest', platform: 'Xbox', type: 'Physical', price: 64.99, image: game11, genre: 'Space' },
+  { id: '12', title: 'World Cup 2024', platform: 'PS5', type: 'Physical', price: 59.99, image: game12, genre: 'Sports' },
+  { id: '13', title: 'Urban Combat', platform: 'PC', type: 'Digital', price: 45.99, image: game13, genre: 'Action' },
+  { id: '14', title: 'Fantasy Legends', platform: 'Nintendo Switch', type: 'Digital', price: 42.99, image: game14, genre: 'RPG' },
+  { id: '15', title: 'Turbo Highway', platform: 'Xbox', type: 'Physical', price: 37.99, image: game15, genre: 'Racing' },
+  { id: '16', title: 'Terror House', platform: 'PS5', type: 'Digital', price: 32.99, image: game16, genre: 'Horror' },
+  { id: '17', title: 'Star Voyager', platform: 'PC', type: 'Physical', price: 67.99, image: game17, genre: 'Space' },
+  { id: '18', title: 'Tennis Masters', platform: 'Nintendo Switch', type: 'Digital', price: 24.99, image: game18, genre: 'Sports' },
+  { id: '19', title: 'Battle Royale X', platform: 'Xbox', type: 'Digital', price: 19.99, image: game19, genre: 'Action' },
+  { id: '20', title: 'Dragon Quest', platform: 'PS5', type: 'Physical', price: 69.99, image: game20, genre: 'RPG' },
+  { id: '21', title: 'Drift Masters', platform: 'PC', type: 'Digital', price: 41.99, image: game21, genre: 'Racing' },
+  { id: '22', title: 'Haunted Woods', platform: 'Nintendo Switch', type: 'Physical', price: 36.99, image: game22, genre: 'Horror' },
+  { id: '23', title: 'Alien Worlds', platform: 'Xbox', type: 'Digital', price: 52.99, image: game23, genre: 'Space' },
+  { id: '24', title: 'Basketball Pro', platform: 'PS5', type: 'Physical', price: 55.99, image: game24, genre: 'Sports' },
+  { id: '25', title: 'Elite Forces', platform: 'PC', type: 'Digital', price: 48.99, image: game25, genre: 'Action' },
 ];
 
 const Index = () => {
@@ -83,7 +102,9 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
+        {/* Improved gradient overlay that matches the gaming theme */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80" />
         
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-2xl">

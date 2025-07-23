@@ -49,7 +49,7 @@ export const Cart = ({ cartItems, onRemoveFromCart, onClearCart }: CartProps) =>
       </CardHeader>
       
       <CardContent className="space-y-4">
-        <div className="space-y-3 max-h-64 overflow-y-auto">
+        <div className="space-y-3 max-h-96 overflow-y-auto"> {/* Increased from max-h-64 to max-h-96 */}
           {cartItems.map((game) => (
             <div key={game.id} className="flex items-center gap-3 p-3 bg-background/50 rounded-lg">
               <img 
